@@ -1,4 +1,4 @@
 package org.example.components;
 
-public class RandomEngine {
+public class Engine {
 }

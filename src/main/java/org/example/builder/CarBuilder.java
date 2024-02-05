@@ -1,13 +1,13 @@
 package org.example.builder;
 
 import org.example.components.GPS;
-import org.example.components.RandomEngine;
+import org.example.components.Engine;
 import org.example.components.StripComputer;
 import org.example.product.Car;
 
 public class CarBuilder implements Builder {
     private Integer seats;
-    private RandomEngine engine;
+    private Engine engine;
     private StripComputer stripComputer;
     private GPS gps;
 
@@ -25,7 +25,7 @@ public class CarBuilder implements Builder {
     }
 
     @Override
-    public void setEngine(RandomEngine engine) {
+    public void setEngine(Engine engine) {
         this.engine = engine;
     }
 
@@ -43,7 +43,7 @@ public class CarBuilder implements Builder {
         return seats;
     }
 
-    public RandomEngine getEngine() {
+    public Engine getEngine() {
         return engine;
     }
 

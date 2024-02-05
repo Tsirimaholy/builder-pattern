@@ -1,7 +1,7 @@
 package org.example.builder;
 
 
-import org.example.components.RandomEngine;
+import org.example.components.Engine;
 
 public class CarManualBuilder implements Builder {
     private CarManualBuilder(){
@@ -18,7 +18,7 @@ public class CarManualBuilder implements Builder {
     }
 
     @Override
-    public void setEngine(RandomEngine engine) {
+    public void setEngine(Engine engine) {
 
     }
 

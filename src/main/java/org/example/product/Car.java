@@ -2,7 +2,7 @@ package org.example.product;
 
 
 import org.example.components.GPS;
-import org.example.components.RandomEngine;
+import org.example.components.Engine;
 import org.example.components.StripComputer;
 
 public class Car {
@@ -16,11 +16,11 @@ public class Car {
         this.seats = seats;
     }
 
-    public RandomEngine getEngine() {
+    public Engine getEngine() {
         return engine;
     }
 
-    public void setEngine(RandomEngine engine) {
+    public void setEngine(Engine engine) {
         this.engine = engine;
     }
 
@@ -40,11 +40,11 @@ public class Car {
         this.gps = gps;
     }
 
-    private RandomEngine engine;
+    private Engine engine;
     private StripComputer stripComputer;
     private GPS gps;
 
-    public Car(Integer seats, RandomEngine engine, StripComputer stripComputer, GPS gps) {
+    public Car(Integer seats, Engine engine, StripComputer stripComputer, GPS gps) {
         this.seats = seats;
         this.engine = engine;
         this.stripComputer = stripComputer;

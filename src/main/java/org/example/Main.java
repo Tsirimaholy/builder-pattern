@@ -5,7 +5,6 @@ import org.example.product.Car;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         CarDirector carDirector = new CarDirector();
         CarBuilder carBuilder = new CarBuilder();
         carDirector.makeSUV(carBuilder);
