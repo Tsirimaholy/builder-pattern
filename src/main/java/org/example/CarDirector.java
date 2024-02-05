@@ -27,4 +27,14 @@ public class CarDirector {
         builder.setGPS(new GPS());
         builder.setTripComputer(new TripComputer(90));
     }
+
+
+    public void constructSportCarManual(Builder builder){
+        Engine engine = new Engine("diesel", 180, 12, 2023, 1500.0);
+
+        builder.setType(Type.SPORT);
+        builder.setEngine(engine);
+        builder.setGPS(new GPS());
+        builder.setTripComputer(new TripComputer(90));
+    }
 }
