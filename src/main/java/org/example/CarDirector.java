@@ -17,4 +17,14 @@ public class CarDirector {
         builder.setGPS(new GPS());
         builder.setTripComputer(new TripComputer(88));
     }
+
+    public void makeFamilyCar(Builder builder){
+        Engine engine = new Engine("hybrid", 180, 12, 2023, 1500.0);
+
+        builder.setType(Type.FAMILY);
+        builder.setEngine(engine);
+        builder.setSeats(8);
+        builder.setGPS(new GPS());
+        builder.setTripComputer(new TripComputer(90));
+    }
 }
