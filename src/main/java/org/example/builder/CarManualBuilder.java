@@ -2,6 +2,8 @@ package org.example.builder;
 
 
 import org.example.components.Engine;
+import org.example.components.GPS;
+import org.example.components.TripComputer;
 
 public class CarManualBuilder implements Builder {
     private CarManualBuilder(){
@@ -23,12 +25,12 @@ public class CarManualBuilder implements Builder {
     }
 
     @Override
-    public void setTripComputer() {
+    public void setTripComputer(TripComputer tripComputer) {
 
     }
 
     @Override
-    public void setGPS() {
+    public void setGPS(GPS gps) {
 
     }
 }

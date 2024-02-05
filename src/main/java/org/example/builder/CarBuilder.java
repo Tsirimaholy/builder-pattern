@@ -30,13 +30,13 @@ public class CarBuilder implements Builder {
     }
 
     @Override
-    public void setTripComputer() {
-        // other things happen
+    public void setTripComputer(TripComputer tripComputer) {
+        this.tripComputer = tripComputer;
     }
 
     @Override
-    public void setGPS() {
-        //ljklj
+    public void setGPS(GPS gps) {
+        this.gps = gps;
     }
 
     public Integer getSeats() {
