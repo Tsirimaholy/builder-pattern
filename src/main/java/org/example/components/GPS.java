@@ -4,6 +4,9 @@ public class GPS {
     private String destination;
     private String currentLocation;
 
+    public GPS(){
+        this.currentLocation = "Here you are XD!";
+    }
     public GPS(String destination) {
         this.destination = destination;
     }
