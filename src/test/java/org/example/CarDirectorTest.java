@@ -17,7 +17,9 @@ class CarDirectorTest {
         Car suvCar = carBuilder.getResults();
 
         Type excpectedType = Type.SUV;
+        int expectedNumberOfSeats = 5;
         assertEquals(suvCar.getType(), excpectedType);
+        assertEquals(suvCar.getSeats(), expectedNumberOfSeats);
     }
 
     @Test
