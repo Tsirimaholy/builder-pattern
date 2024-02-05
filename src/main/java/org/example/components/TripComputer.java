@@ -1,4 +1,4 @@
 package org.example.components;
 
-public class StripComputer {
+public class TripComputer {
 }

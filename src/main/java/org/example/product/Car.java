@@ -3,7 +3,7 @@ package org.example.product;
 
 import org.example.components.GPS;
 import org.example.components.Engine;
-import org.example.components.StripComputer;
+import org.example.components.TripComputer;
 
 public class Car {
     private Integer seats;
@@ -24,12 +24,12 @@ public class Car {
         this.engine = engine;
     }
 
-    public StripComputer getStripComputer() {
-        return stripComputer;
+    public TripComputer getStripComputer() {
+        return tripComputer;
     }
 
-    public void setStripComputer(StripComputer stripComputer) {
-        this.stripComputer = stripComputer;
+    public void setStripComputer(TripComputer tripComputer) {
+        this.tripComputer = tripComputer;
     }
 
     public GPS getGps() {
@@ -41,13 +41,13 @@ public class Car {
     }
 
     private Engine engine;
-    private StripComputer stripComputer;
+    private TripComputer tripComputer;
     private GPS gps;
 
-    public Car(Integer seats, Engine engine, StripComputer stripComputer, GPS gps) {
+    public Car(Integer seats, Engine engine, TripComputer tripComputer, GPS gps) {
         this.seats = seats;
         this.engine = engine;
-        this.stripComputer = stripComputer;
+        this.tripComputer = tripComputer;
         this.gps = gps;
     }
 }
