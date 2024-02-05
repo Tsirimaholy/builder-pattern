@@ -4,12 +4,14 @@ import org.example.components.GPS;
 import org.example.components.Engine;
 import org.example.components.TripComputer;
 import org.example.product.Car;
+import org.example.product.Type;
 
 public class CarBuilder implements Builder {
     private Integer seats;
     private Engine engine;
     private TripComputer tripComputer;
     private GPS gps;
+    private Type type;
 
     @Override
     public void reset() {
@@ -39,6 +41,11 @@ public class CarBuilder implements Builder {
         this.gps = gps;
     }
 
+    @Override
+    public void setType(Type type) {
+        this.type = type;
+    }
+
     public Integer getSeats() {
         return seats;
     }
@@ -56,6 +63,10 @@ public class CarBuilder implements Builder {
     }
 
     public Car getResults(){
-        return new Car(seats, engine, tripComputer, gps);
+        return new Car(seats, engine, tripComputer, gps, Type.FAMILY);
+    }
+
+    public Type getType() {
+        return type;
     }
 }

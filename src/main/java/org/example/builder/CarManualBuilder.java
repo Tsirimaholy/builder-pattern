@@ -4,6 +4,7 @@ package org.example.builder;
 import org.example.components.Engine;
 import org.example.components.GPS;
 import org.example.components.TripComputer;
+import org.example.product.Type;
 
 public class CarManualBuilder implements Builder {
     private CarManualBuilder(){
@@ -31,6 +32,11 @@ public class CarManualBuilder implements Builder {
 
     @Override
     public void setGPS(GPS gps) {
+
+    }
+
+    @Override
+    public void setType(Type type) {
 
     }
 }
