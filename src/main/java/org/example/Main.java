@@ -10,6 +10,5 @@ public class Main {
         carDirector.makeSUV(carBuilder);
 
         Car suvCar = carBuilder.getResults();
-        System.out.println(suvCar.getSeats());
     }
 }
