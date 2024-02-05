@@ -63,7 +63,7 @@ public class CarBuilder implements Builder {
     }
 
     public Car getResults(){
-        return new Car(seats, engine, tripComputer, gps, Type.FAMILY);
+        return new Car(seats, engine, tripComputer, gps, type);
     }
 
     public Type getType() {
